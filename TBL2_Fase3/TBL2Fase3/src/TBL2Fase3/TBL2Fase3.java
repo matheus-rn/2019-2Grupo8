@@ -4,40 +4,22 @@ public class TBL2Fase3 {
 	
 	private double 	tempo,
 					aplicacaoInicial,
-					taxa;
+					taxa,
+					rendimentoBruto;
 
 	public TBL2Fase3(double tempo, double aplicacaoInicial, double taxa) {
-		this.setTempo(tempo);
-		this.setAplicacaoInicial(aplicacaoInicial);
-		this.setTaxa(taxa);
+		this.tempo = tempo / 365.0f;
+		this.aplicacaoInicial = aplicacaoInicial;
+		this.taxa = taxa / 100;
+		this.rendimentoBruto = calculaRendimentoBruto();
+	}
+
+	private double calculaRendimentoBruto() {
+		return this.aplicacaoInicial * this.taxa * this.tempo;
 	}
 
 	public double getRendimentoBruto() {
-		return 13.97f;
-	}
-
-	public double getTempo() {
-		return tempo;
-	}
-
-	public void setTempo(double tempo) {
-		this.tempo = tempo;
-	}
-
-	public double getAplicacaoInicial() {
-		return aplicacaoInicial;
-	}
-
-	public void setAplicacaoInicial(double aplicacaoInicial) {
-		this.aplicacaoInicial = aplicacaoInicial;
-	}
-
-	public double getTaxa() {
-		return taxa;
-	}
-
-	public void setTaxa(double taxa) {
-		this.taxa = taxa;
+		return this.rendimentoBruto;
 	}
 
 }
