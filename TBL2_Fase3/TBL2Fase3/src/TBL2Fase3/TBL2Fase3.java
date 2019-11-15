@@ -47,4 +47,9 @@ public class TBL2Fase3 {
 		return this.impostoRenda;
 	}
 
+	public double getTaxaRendimentoLiquido() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }

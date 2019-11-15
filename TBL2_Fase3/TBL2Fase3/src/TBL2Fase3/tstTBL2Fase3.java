@@ -49,6 +49,7 @@ public class tstTBL2Fase3 {
 		
 		assert(Math.abs(respostaEsperada.rendimentoBruto - calculo.getRendimentoBruto()) < 0.01);
 		assert(Math.abs(respostaEsperada.impostoRenda - calculo.getImpostoRenda()) < 0.01);
+		assert(Math.abs(respostaEsperada.taxaRendimentoLiquido - calculo.getTaxaRendimentoLiquido()) < 0.0001);
 	}
 
 }
