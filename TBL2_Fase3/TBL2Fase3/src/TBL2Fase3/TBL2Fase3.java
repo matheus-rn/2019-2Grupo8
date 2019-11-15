@@ -7,7 +7,8 @@ public class TBL2Fase3 {
 					taxa,
 					rendimentoBruto,
 					taxaImpostoRenda,
-					impostoRenda;
+					impostoRenda,
+					taxaRendimentoLiquido;
 
 	public TBL2Fase3(double tempo, double aplicacaoInicial, double taxa) {
 		this.tempo = tempo / 365.0f;
@@ -17,6 +18,7 @@ public class TBL2Fase3 {
 		this.rendimentoBruto = calculaRendimentoBruto();
 		this.taxaImpostoRenda = calculaAliquota(tempo);
 		this.impostoRenda = calculaImpostoRenda();
+		this.taxaRendimentoLiquido = calculaTaxaRendimentoLiquido();
 	}
 
 	private double calculaRendimentoBruto() {
@@ -47,9 +49,13 @@ public class TBL2Fase3 {
 		return this.impostoRenda;
 	}
 
+	private double calculaTaxaRendimentoLiquido() {
+		double montante = this.aplicacaoInicial + this.rendimentoBruto - this.impostoRenda;
+		return ((montante / this.aplicacaoInicial) * 100) - 100;
+	}
+	
 	public double getTaxaRendimentoLiquido() {
-		// TODO Auto-generated method stub
-		return 1.0829;
+		return this.taxaRendimentoLiquido;
 	}
 
 }
