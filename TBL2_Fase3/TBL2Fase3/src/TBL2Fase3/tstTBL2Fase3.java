@@ -48,6 +48,7 @@ public class tstTBL2Fase3 {
 		TBL2Fase3 calculo = new TBL2Fase3(tempo, aplicacaoInicial, taxa);
 		
 		assert(Math.abs(respostaEsperada.rendimentoBruto - calculo.getRendimentoBruto()) < 0.01);
+		assert(Math.abs(respostaEsperada.impostoRenda - calculo.getImpostoRenda()) < 0.01);
 	}
 
 }

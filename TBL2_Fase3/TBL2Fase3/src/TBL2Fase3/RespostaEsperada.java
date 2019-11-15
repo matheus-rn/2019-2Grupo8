@@ -3,12 +3,12 @@ package TBL2Fase3;
 public class RespostaEsperada {
 
 	double 	rendimentoBruto,
-			taxaImpostoRenda,
+			impostoRenda,
 			taxaRendimentoLiquido;
 	
-	public RespostaEsperada (double rendimentoBruto, double taxaImpostoRenda, double taxaRendimentoLiquida) {
+	public RespostaEsperada (double rendimentoBruto, double impostoRenda, double taxaRendimentoLiquida) {
 		this.rendimentoBruto = rendimentoBruto;
-		this.taxaImpostoRenda = taxaImpostoRenda;
+		this.impostoRenda = impostoRenda;
 		this.taxaRendimentoLiquido = taxaRendimentoLiquida;
 	}
 }
