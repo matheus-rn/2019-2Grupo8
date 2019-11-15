@@ -1,12 +1,13 @@
 package TBL2Fase3;
 
-import static org.junit.Assert.*;
-
 import java.util.Arrays;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
+@RunWith(Parameterized.class)
 public class tstTBL2Fase3 {
 
 	private double 	tempo,
