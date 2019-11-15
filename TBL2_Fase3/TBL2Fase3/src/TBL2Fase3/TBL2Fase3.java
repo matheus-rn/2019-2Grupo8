@@ -25,7 +25,7 @@ public class TBL2Fase3 {
 
 	public double getImpostoRenda() {
 		// TODO Auto-generated method stub
-		return 0;
+		return 3.14f;
 	}
 
 }
