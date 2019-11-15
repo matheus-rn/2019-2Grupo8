@@ -5,8 +5,7 @@ public class TBL2Fase3 {
 	private double 	tempo,
 					aplicacaoInicial,
 					taxa,
-					rendimentoBruto,
-					impostoRenda;
+					rendimentoBruto;
 
 	public TBL2Fase3(double tempo, double aplicacaoInicial, double taxa) {
 		this.tempo = tempo / 365.0f;
@@ -25,7 +24,7 @@ public class TBL2Fase3 {
 
 	public double getImpostoRenda() {
 		// TODO Auto-generated method stub
-		return 3.14f;
+		return 0;
 	}
 
 }
