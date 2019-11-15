@@ -31,6 +31,12 @@ public class tstTBL2Fase3 {
 					)},
 			{240.0f, 3000.0f, 9.0f, new RespostaEsperada (
 					177.53f, 35.51f, 4.7342
+					)},
+			{390.0f, 100.0f, 7.5f, new RespostaEsperada (
+					8.01f, 1.40f, 6.6113
+					)},
+			{900.0f, 4200.0f, 9.5f, new RespostaEsperada (
+					983.84f, 147.58f, 19.9110
 					)}
 		};
 		
