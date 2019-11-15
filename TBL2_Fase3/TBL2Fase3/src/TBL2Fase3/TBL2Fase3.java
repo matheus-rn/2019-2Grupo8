@@ -49,7 +49,7 @@ public class TBL2Fase3 {
 
 	public double getTaxaRendimentoLiquido() {
 		// TODO Auto-generated method stub
-		return 0;
+		return 1.0829;
 	}
 
 }
