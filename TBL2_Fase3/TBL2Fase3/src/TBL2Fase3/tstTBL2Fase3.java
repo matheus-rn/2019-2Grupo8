@@ -28,6 +28,9 @@ public class tstTBL2Fase3 {
 		Object[][] resposta = new Object[][] {
 			{60.0f, 1000.0f, 8.5, new RespostaEsperada (
 					13.97f, 3.14f, 1.0829
+					)},
+			{240.0f, 3000.0f, 9.0f, new RespostaEsperada (
+					177.53f, 35.51f, 4.7342
 					)}
 		};
 		
