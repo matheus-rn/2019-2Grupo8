@@ -869,20 +869,7 @@ exports[`Testing EditMonitoring component Test if EditMonitoring renders correct
       >
         <WithStyles(Button)
           color="primary"
-          component={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "displayName": "Link",
-              "propTypes": Object {
-                "innerRef": [Function],
-                "onClick": [Function],
-                "replace": [Function],
-                "target": [Function],
-                "to": [Function],
-              },
-              "render": [Function],
-            }
-          }
+          component={[Function]}
           to="/expandedCard/function() {
         return fn.apply(this, arguments);
       }"

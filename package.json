@@ -39,7 +39,19 @@
       "src/**/*.{js,jsx}",
       "!/node_modules/",
       "!src/index.js",
-      "!src/serviceWorker.js"
+      "!src/serviceWorker.js",
+      "!src/Components/EditProfile/*.js",
+      "!src/Components/SignUP/*.js",
+      "!src/Components/ForgotPassword/*.js",
+      "!src/Components/Login/*.js",
+      "!src/Components/ProfileMonitor/*.js",
+      "!src/Components/Profile/*.js",
+      "!src/Components/RegisterMonitoring/*.js",
+      "!src/Components/SimpleModal/*.js",
+      "!src/Helpers/*.js",
+      "!src/Components/EditMonitoring/*js",
+      "!src/Components/Search/*js",
+      "!src/Components/Feed/*js"
     ]
   }
 }
