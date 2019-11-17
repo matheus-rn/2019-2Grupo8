@@ -20,13 +20,13 @@ let props={
     }}
 };
 
+let component =  shallow(<EditMonitoring {...props}/>);
 
 describe('Testing EditMonitoring component', () => {
 
     it('Test if EditMonitoring renders correctly', () =>{
         jest.fn();
-        const tree = shallow(<EditMonitoring {...props}/>);
-        expect(toJson(tree)).toMatchSnapshot();
+        expect(toJson(component)).toMatchSnapshot();
     });
 
     it('should call onChange in Text Field #name', () => {
@@ -36,13 +36,31 @@ describe('Testing EditMonitoring component', () => {
           target: { value: 'Name Test' }
         };
 
-        const component = shallow(<EditMonitoring {...props}/>);
-
         // Achar o TextField com id="name" e simular o evento de mudança no campo
         component.find('#name').simulate('change', event);
         
         // Conferindo se o valor do campo #name é igual ao que foi 'setado'
         // no passo anterior. Isso me garante que o campo de nome recebeu o valor "Name Test" 
         expect(component.find('#name').props().value).toEqual('Name Test');
+    });
+
+    it('should call onChange in Text Field #subject', () => {
+        
+        const event = {
+          target: { value: 'Subject Test' }
+        };
+        component.find('#subject').simulate('change', event);
+        
+        expect(component.find('#subject').props().value).toEqual('Subject Test');
+    });
+
+    it('should call onChange in Text Field #description', () => {
+        
+        const event = {
+          target: { value: 'Description Test' }
+        };
+        component.find('#description').simulate('change', event);
+        
+        expect(component.find('#description').props().value).toEqual('Description Test');
     });
 });
