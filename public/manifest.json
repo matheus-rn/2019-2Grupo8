@@ -1,0 +1,16 @@
+{
+  "short_name": "+Monitoria",
+  "name": "+Monitoria",
+  "theme_color": "#44A1F2",
+  "background_color": "#44A1F2",
+  "icons": [
+    {
+      "src": "monitoria512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "scope":"/",
+  "display": "standalone"
+}
