@@ -51,7 +51,10 @@
       "!src/Helpers/*.js",
       "!src/Components/EditMonitoring/*js",
       "!src/Components/Search/*js",
-      "!src/Components/Feed/*js"
+      "!src/Components/Feed/*js",
+      "!src/Components/GenericButtons/*js",
+      "!src/Components/ProfileTab/*js",
+      "!src/Components/AppBar/*js"
     ]
   }
 }
